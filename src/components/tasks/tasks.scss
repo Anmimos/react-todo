@@ -1,0 +1,135 @@
+.task-form {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+}
+
+.task-form input {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.task-form button {
+    padding-left: 35px;
+    padding-right: 35px;
+    height: 50px;
+    background-color: #FFFFFF;
+    color: #000;
+}
+
+div.tasks {
+    transition: .3s ease;
+}
+
+.task-card {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #FFFFFF;
+    border-right: none;
+    height: 50px;
+    transition: .3s ease;
+}
+
+.task-card input[type='checkbox'] {
+    /* position: absolute; */
+    /* top: -9999px; */
+    display: none;
+}
+
+div.check label {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+div.check label p {
+    transition: .3s ease;
+    opacity: 0;
+}
+
+.checkVisible {
+    opacity: 1 !important;
+}
+
+.task-text {
+    margin-left: 15px;
+    margin-right: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: .3s ease;
+}
+
+.task-compl {
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+.task-card a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    height: 50px;
+    width: 50px;
+    min-width: 50px;
+    background-color: #fff;
+}
+
+.task-card a p svg path {
+    transition: .3s ease;
+}
+
+.task-card a:hover p svg path {
+    fill: #fff;
+}
+
+
+@media screen and (max-width: 1050px) {
+    #tasks {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:945px) {
+    h1 {
+        font-size: 37px;
+    }
+
+    .task-form button {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media screen and (max-width:675px) {
+    #tasks {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:560px) {
+    .task-form {
+        flex-direction: column;
+    }
+
+    .task-form button {
+        margin-top: 15px;
+    }
+
+}
+
+@media screen and (max-width:420px) {
+    h1 {
+        font-size: 30px;
+    }
+}
